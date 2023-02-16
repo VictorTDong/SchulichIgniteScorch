@@ -12,6 +12,8 @@
             padding: 0.5rem 2rem;
             margin: 0 auto;
             max-width: 90ch;
+            background-color: rgb(32, 32, 32);
+            color: white;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -25,6 +27,10 @@
         
         pre, code {
             font-family: 'Courier New', monospace;
+            border-radius: 5px;
+            background-color: rgb(71, 70, 70);
+            color: rgb(255, 189, 67);
+            padding: 10px !important;
         }
         
         a {
@@ -106,12 +112,13 @@ document.write(searchTerm); // Used to display the search term usually
 <p>Stored XSS occurs when an attacker injects malicious code into a website's database or other permanent storage, which is then executed whenever a user loads the affected page. Here's an example of how a stored XSS attack might work. Imagine you have a comment form on a news site that then displays the comments on the page when people read an article:</p>
 
 <pre><code class="language-html">
-  &lt;form id="comment-form">
+&lt;form id="comment-form">
     &lt;input type="text" name="name">
     &lt;input type="textarea" name="comment">
     &lt;button type="sumit">Submit&lt;/button>
-  &lt;/form>
-</code></pre>
+&lt;/form>
+    </code>
+</pre>
 
 <p>Now imagine in the above form you were to add the following code to the comment input:</p>
 
