@@ -10,6 +10,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8e6541d322.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -29,6 +30,12 @@
         margin: 1em 0;
         padding: 0;
     }
+
+    .slideimg {vertical-align: middle; object-fit: cover; height: 350px; opacity: 0.7; background: rgba(0, 0, 0, 0.8);}
+
+    .slidetxt {color: black; text-shadow: 0 0 1px transparent; line-height: 1.6;}
+
+    .caption {font-size: 50px; color: gold;}
 
 </style>
 
@@ -166,10 +173,127 @@
           </div>
           <hr/>
     </div>
-  </main>
 
-  <footer>
-    <!-- place footer here -->
+    <p class="lead mt-5 text-light text-center">Albums</p>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1638836177891-d47f6cc7a336?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" class="d-block w-100 slideimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class = "caption slidetxt">The Crown</h5>
+            <p class = "slidetxt"> 1. We Will Rule You"
+                2. Another One Falls"
+                3. Rock Opera"
+                4. Don't Slow Me Down"
+                5. We Are the Kings"
+                6. Under Pressure"
+                7. Somebody to Love Me"
+                8. Crazy Little Thing Called Love"</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1531777319985-9dca28eeae64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1438&q=80" class="d-block w-100 slideimg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class = "caption slidetxt">The King's Throne</h5>
+            <p class = "slidetxt" style=" color: white;"> 1. Another One Joins the Band
+              2. The Show Must Go On
+              3. I Want to Break Free
+              4. Play the Game
+              5. Love of My Life
+              6. You're My Best Friend
+              7. Who Wants to Live Forever
+              8. A Kind of Magic</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <footer class="text-center text-lg-start bg-black text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Find us on social media!</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a style="text-decoration:none;" href="https://www.facebook.com" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a style="text-decoration:none;" href="https://www.twitter.com" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a style="text-decoration:none;" href="https://www.instagram.com" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a style="text-decoration:none;" href="https://www.tiktok.com" class="me-4 text-reset">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a style="text-decoration:none;" href="https://www.youtube.com" class="me-4 text-reset">
+          <i class="fab fa-youtube"> </i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact information for booking or media inquiries</h6>
+            <p><i class="fas fa-home me-3"></i>210-212 Albert Rd, Bolton, Lancashire, BL4 9JB</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              name@example.co.uk
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +44 7700 900077</p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Submit and enquiry</h6>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+              <label for="message" class="form-label">Message</label>
+              <input type="message" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="your message here">
+              <label for="message" class="form-label"></label>
+              <input type="submit" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="your message here">
+            </div>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023
+      <a class="text-reset fw-bold">King!</a>
+    </div>
+    <!-- Copyright -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
