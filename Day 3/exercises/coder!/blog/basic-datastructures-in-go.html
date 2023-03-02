@@ -15,7 +15,8 @@
                 border-radius: 5%;
             }
         </style>
-    </head><body>
+    </head>
+    <body>
 
         <!-- Start of Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -59,11 +60,24 @@
         </div>
         <hr>
     </div>
+
     <!-- End of header--><!-- Start of content -->
         <article class="mb-4">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <pre class="mermaid">
+                            graph TD
+                                E[User] & A[Model] & B[View] & C[Template] & D[database]
+                                A --Define schema--> D
+                                B --requests data--> A
+                                A --Responds with data-->B
+                                B --Inject data--> C
+                                C --Return Rendered page--> B
+                                E --Request content--> B
+                                B --Respond--> E
+                                B --Store data--> D
+                            </pre>
                         <!-- Blog content goes Below--><p>Structs, Enumerators and Interfaces are various different types/data structures that can be created in go to fulfill various needs. These three mechanisms are the closest that go gets to being object oriented&nbsp;BUT&nbsp;make no mistake, none of these types are similar to traditional object oriented programming entirely, instead they allow you to follow similar design patterns that are available in object oriented languages without any sort of real sub-classing, or any 'one-stop shop' for objects.</p><h2>Definitions</h2><h3>Types</h3><p>Types are a way of generalizing data; for example a real number can be represented as an integer type (or int as it's commonly called). Types are found in all languages from simple types like integers, and strings to collections like arrays to even custom types like those presented in this demo.</p><h3>Structs</h3><p>Structs are a way of defining custom typed groupings of data (similar to class attributes). Another easy way to think about structs is to think of them is similar to a templated version of a&nbsp;<a href="https://en.wikipedia.org/wiki/Hash_table">Hash table</a>&nbsp;(a dict in python).</p><p>A simple example would be a date struct:</p>
 <pre>
     <code class="language-go">type Date struct{
@@ -265,6 +279,11 @@ func main() {
 <!-- End of content-->
 
 </body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

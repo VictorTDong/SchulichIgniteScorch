@@ -70,6 +70,18 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <!-- Blog content goes Below-->
+                    <pre class="mermaid">
+                        graph TD
+                            E[User] & A[Model] & B[View] & C[Template] & D[database]
+                            A --Define schema--> D
+                            B --requests data--> A
+                            A --Responds with data-->B
+                            B --Inject data--> C
+                            C --Return Rendered page--> B
+                            E --Request content--> B
+                            B --Respond--> E
+                            B --Store data--> D
+                        </pre>
 
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore dicta sapiente tempore totam rem, iste est eveniet repellendus sunt quasi enim neque nobis dolorum incidunt repudiandae consequatur voluptatibus dolorem?
@@ -83,6 +95,11 @@
     <!-- End of content-->
 
 </body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

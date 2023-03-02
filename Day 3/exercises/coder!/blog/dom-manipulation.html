@@ -64,6 +64,18 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <pre class="mermaid">
+                            graph TD
+                                E[User] & A[Model] & B[View] & C[Template] & D[database]
+                                A --Define schema--> D
+                                B --requests data--> A
+                                A --Responds with data-->B
+                                B --Inject data--> C
+                                C --Return Rendered page--> B
+                                E --Request content--> B
+                                B --Respond--> E
+                                B --Store data--> D
+                            </pre>
                         <!-- Blog content goes Below--><p>You may have heard of the DOM before, basically any pages in a browser have some objects to tell you about the state of the page, and the browser more broadly. The <b>document object </b>contains information about the <b>html document/page</b>&nbsp;that is currently loaded (elements, css etc), and the <b>window</b>&nbsp;<b>object </b>tells you more about the <b>browser window</b>&nbsp;(resolution, url etc.).</p><p>With these two objects we can make changes to the page that the user is seeing including:</p><ul><li>Adding, removing, and updating elements</li><li>Sending the user to a different URL</li><li>Change the behavior of the app based on screen size</li><li>Make the page fullscreen</li><li>etc.</li></ul><p>So, let's look at some of these functionalities!</p><h4>Document Object</h4><p>We're going to look at the basics of just editing the HTML of an element that exists on the page. Let's take the example HTML:</p>
 <pre>
     <code class="language-html">&lt;div id="result" class="result-box"&gt;
@@ -100,6 +112,11 @@ elem.style // returns CSSStyleDeclaration object that you can modify</code>
 <!-- End of content-->
 
 </body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -64,6 +64,18 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <pre class="mermaid">
+                            graph TD
+                                E[User] & A[Model] & B[View] & C[Template] & D[database]
+                                A --Define schema--> D
+                                B --requests data--> A
+                                A --Responds with data-->B
+                                B --Inject data--> C
+                                C --Return Rendered page--> B
+                                E --Request content--> B
+                                B --Respond--> E
+                                B --Store data--> D
+                            </pre>
                         <!-- Blog content goes Below--><p>If you're new to JS you might wonder what the title even means. Well there are actually 3 different ways that the = is used in javascript, based on how many of them you put in a row.&nbsp;</p><h3>The two "normal ones"</h3><p>So, there are two "normal" situations you have probably seen the = in javascript, assignments and checking conditions. Assignments are used to assign variables, and conditionals is what you do when you're using an if statement, or while loops. Here's an example of both</p>
 <pre>
     <code class="language-js">authorized = false; // This is an assignment (uses 1 =)
@@ -110,6 +122,11 @@ console.log ("Less based")
 <!-- End of content-->
 
 </body>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 <!--Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

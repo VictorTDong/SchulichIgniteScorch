@@ -105,6 +105,18 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-md-10 col-lg-8 col-xl-7">
             <!-- Blog content goes Below-->
+            <pre class="mermaid">
+              graph TD
+                  E[User] & A[Model] & B[View] & C[Template] & D[database]
+                  A --Define schema--> D
+                  B --requests data--> A
+                  A --Responds with data-->B
+                  B --Inject data--> C
+                  C --Return Rendered page--> B
+                  E --Request content--> B
+                  B --Respond--> E
+                  B --Store data--> D
+              </pre>
             <p>Windows terminals suck...</p>
             <p>
               At least they do if you're used to other systems. There are a few
@@ -226,6 +238,10 @@ From there copy-paste the file from earlier as<br>
     </article>
     <!-- End of content-->
   </body>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
   <!--Bootstrap-->
   <script

@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="./css/filtering.css">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/8e6541d322.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    .profile-pic {
+        vertical-align: middle;
+        object-fit: cover;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        padding: 0px;
+    }
+</style>
+
 <body>
 
     <!-- Start of Navbar-->
@@ -59,84 +71,232 @@
         <span class="filter" data-filter="golang">GOLANG</span>
     </div>
 <div class="container" style="margin-bottom: 25px">
+
     <div class="posts row">
-        <div class="post col-md-4">
+        <div class="post col-lg-12 " data-filter="python">
             <div class="card">
-                <!-- TODO: add image-->
-                <img class="card-img-top" src="./img/powershell.png" alt="List comprehensions">
-                <div class="card-body">
-                    <h5 class="card-title">Making PowerShell More Bash-ful</h5>
-                    <p class="card-text">How to ease the headaches of working on windows terminals</p>
-                    <a href="blog/powershell-batch.html" class="btn btn-dark">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="post col-md-4" data-filter="python">
-            <div class="card">
-                <img class="card-img-top" src="./img/list-comprehension.png" alt="List comprehensions">
-                <div class="card-body">
-                    <h5 class="card-title">How to do List comprehensions</h5>
-                    <p class="card-text">The "pythonic" way to build lists that are created with simple itteration</p>
-                    <a href="blog/list-comprehensions.html" class="btn btn-dark">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="post col-md-4" data-filter="python">
-            <div class="card">
-                <img class="card-img-top" src="./img/dataclasses.png" alt="Dataclasses">
-                <div class="card-body">
-                    <h5 class="card-title">Dataclasses</h5>
-                    <p class="card-text">A simple and idiomatic way to define classes with many attributes</p>
-                    <a href="blog/dataclasses.html" class="btn btn-dark">Read More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="post col-md-4" data-filter="javascript">
-            <div class="card">
-                <img class="card-img-top" src="./img/dom-manipulation.png" alt="Dom manipulation">
-                <div class="card-body">
-                    <h5 class="card-title">How to modify DOM elements</h5>
-                    <p class="card-text">Updating a pages' elements dynamically after the page has loaded</p>
-                    <a href="blog/dom-manipulation.html" class="btn btn-dark">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="post col-md-4" data-filter="javascript">
-            <div class="card">
-                <img class="card-img-top" src="./img/equals.png" alt="equals">
-                <div class="card-body">
-                    <h5 class="card-title">The many equals signs of JS</h5>
-                    <p class="card-text">The many forms of equality, and what they mean in javascript</p>
-                    <a href="blog/equals-javascript.html" class="btn btn-dark">Read More</a>
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/powershell.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">Making PowerShell More Bash-ful</h5>
+                        <p class="card-text">How to ease the headaches of working on windows terminals</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">scripting</a>
+                                        <a href="https://www.google.com">windows</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">python</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">Windows terminals suck... At least they do if you're used to other systems. There are a few things that are quite annoying, one...</p>
+                            <a href="blog/powershell-batch.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
 
-
-        <div class="post col-md-4" data-filter="golang">
+        <div class="post col-lg-12 " data-filter="python">
             <div class="card">
-                <img class="card-img-top" src="./img/go-string-formatting.png" alt="String formatting in go">
-                <div class="card-body">
-                    <h5 class="card-title">String formatting in Golang</h5>
-                    <p class="card-text">How to properly format strings in Golang and print them</p>
-                    <a href="blog/string-formatting-go.html" class="btn btn-dark">Read More</a>
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/list-comprehension.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">How to do List comprehensions</h5>
+                        <p class="card-text">The "pythonic" way to build lists that are created with simple itteration</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">list</a>
+                                        <a href="https://www.google.com">comprehension</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">python</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">List Comprehensions are syntactically simple ways to create iterables of modified data. They don't add any new functionality...</p>
+                            <a href="blog/list-comprehensions.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
-        <div class="post col-md-4" data-filter="golang">
+
+        <div class="post col-lg-12 " data-filter="python">
             <div class="card">
-                <img class="card-img-top" src="./img/datastructures.png" alt="Datastructures">
-                <div class="card-body">
-                    <h5 class="card-title">Basic datastructures in Golang</h5>
-                    <p class="card-text">Organization of data, methods, and enumerators in go</p>
-                    <a href="blog/basic-datastructures-in-go.html" class="btn btn-dark">Read More</a>
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/dataclasses.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">Dataclasses</h5>
+                        <p class="card-text">A simple and idiomatic way to define classes with many attributes</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">data</a>
+                                        <a href="https://www.google.com">classes</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">python</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">Dataclasses is a python standard library module for creating dataclasses. Dataclasses are just syntactically simpler class definitions...</p>
+                            <a href="blog/dataclasses.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="post col-lg-12 " data-filter="javascript">
+            <div class="card">
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/dom-manipulation.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">How to modify DOM elements</h5>
+                        <p class="card-text">Updating a pages' elements dynamically after the page has loaded</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">dom</a>
+                                        <a href="https://www.google.com">manipulation</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">javascript</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">You may have heard of the DOM before, basically any pages in a browser have some objects to tell you about the state of the page...</p>
+                            <a href="blog/dom-manipulation.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="post col-lg-12 " data-filter="javascript">
+            <div class="card">
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/equals.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">The many equals signs of JS</h5>
+                        <p class="card-text">The many forms of equality, and what they mean in javascript</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">equals</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">javascript</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">If you're new to JS you might wonder what the title even means. Well there are actually 3 different ways...</p>
+                            <a href="blog/equals-javascript.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="post col-lg-12 " data-filter="golang">
+            <div class="card">
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/go-string-formatting.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">String formatting in Golang</h5>
+                        <p class="card-text">How to properly format strings in Golang and print them</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">string</a>
+                                        <a href="https://www.google.com">formatting</a>
+                                        <a href="https://www.google.com">print</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">golang</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">If you're new to JS you might wonder what the title even means. Well there are actually 3 different ways...</p>
+                            <a href="blog/string-formatting-go.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="post col-lg-12 " data-filter="golang">
+            <div class="card">
+                <div class="row">                
+                    <img class="card-img-left col-lg-4" src="./img/datastructures.png" alt="List comprehensions">
+                    <div class="card-body col-lg-8">
+                        <h5 class="card-title">Basic datastructures in Golang</h5>
+                        <p class="card-text">Organization of data, methods, and enumerators in go</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img class="card-img-left profile-pic" src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="List comprehensions">
+                                <p class="card-text fw-bold">Victor Dong</p>
+                            </div> 
+                            <div class="col-lg-8">
+                                <div class="row">    
+                                    <p class="d-inline">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <a href="https://www.google.com">data</a>
+                                        <a href="https://www.google.com">structures</a>
+                                    </p>
+                                    <p class="d-inline">Language(s): <a href="https://www.google.com">golang</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="card-text fw-light">Structs, Enumerators and Interfaces are various different types/data structures that can be created in go to fulfill various needs...</p>
+                            <a href="blog/basic-datastructures-in-go.html" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
