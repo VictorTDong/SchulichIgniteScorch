@@ -219,9 +219,9 @@
                 // Escape HTML sequences
                 processedData = contentBlock.data.code.replace("<", "&lt;").replace(">", "&gt;")
                 formattedData.push(`
-<pre>
-    <code class="language-${contentBlock.data.languageCode}">${processedData}</code>
-</pre>        `)
+                <pre>
+                    <code class="language-${contentBlock.data.languageCode}">${processedData}</code>
+                </pre>        `)
                 break
             case "table": 
                 console.log("table", contentBlock.data)

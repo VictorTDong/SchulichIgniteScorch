@@ -160,9 +160,9 @@
                 // processedData = contentBlock.data.code.replace("<", "&lt;").replace(">", "&gt;") // What you should do
                 processedData = contentBlock.data.code
                 formattedData.push(`
-<pre>
-    <code class="language-${contentBlock.data.languageCode}">${processedData}</code>
-</pre>        `)
+            <pre>
+                <code class="language-${contentBlock.data.languageCode}">${processedData}</code>
+            </pre>        `)
             break;
             case 'paragraph':
                 //console.log("paragraph", contentBlock.data)

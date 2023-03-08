@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <meta name="description" content="" />
+                <meta name="author" content="" />
+                <title>Rabbits</title>
+                <!-- Favicon-->
+                <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+                <!-- Core theme CSS (includes Bootstrap)-->
+                <link href="css/styles.css" rel="stylesheet" />
+            </head><style>
+            html, body {
+            margin: 0;
+            padding: 0;
+            }
+            .background {
+            position:  absolute;
+            display:  block;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            } 
+        </style><body>
+        <canvas class="background"> </canvas>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Animals</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="all_animals.html">All animals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="submit.html">Submit an animal</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav><div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Put title from HTML here-->
+                        <h1 class="fw-bolder mb-1">Rabbit </h1>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://www.gannett-cdn.com/presto/2022/07/26/NCOD/7505d72e-204d-4824-a234-81d499f9c68b-A_young_eastern_cottontail_in_the_writers_Worthington_backyard._Jim_McCormac.jpg?crop=2309,1299,x0,y121&width=2309&height=1299&format=pjpg&auto=webp" alt="..." /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5"><h1 class="fw-bolder mb-4 mt-5" >Rabbits are quick</h1><p class="fs-5 mb-4">Rabbits, also known as bunnies or bunny rabbits, are small mammals in the family Leporidae (which also contains the hares) of the order Lagomorpha (which also contains the pikas). Oryctolagus cuniculus includes the European rabbit species and its descendants, the world's 305 breeds[1] of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types of cottontail. The European rabbit, which has been introduced on every continent except Antarctica, is familiar throughout the world as a wild prey animal and as a domesticated form of livestock and pet. With its widespread effect on ecologies and cultures, the rabbit is, in many areas of the world, a part of daily life—as food, clothing, a companion, and a source of artistic inspiration.</p><p class="fs-5 mb-4">Although once considered rodents, lagomorphs like rabbits have been discovered to have diverged separately and earlier than their rodent cousins and have a number of traits rodents lack, like two extra incisors.</p></section>
+                            </article>
+                        </div>
+                    </div>
+                </div><!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+            </body>
+        <script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background'
+                });
+            };
+        </script>
+        </html>

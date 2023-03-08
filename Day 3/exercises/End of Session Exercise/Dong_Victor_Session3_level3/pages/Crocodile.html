@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <meta name="description" content="" />
+                <meta name="author" content="" />
+                <title>Crocodiles</title>
+                <!-- Favicon-->
+                <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+                <!-- Core theme CSS (includes Bootstrap)-->
+                <link href="css/styles.css" rel="stylesheet" />
+            </head><style>
+            html, body {
+            margin: 0;
+            padding: 0;
+            }
+            .background {
+            position:  absolute;
+            display:  block;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            } 
+        </style><body>
+        <canvas class="background"> </canvas>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Animals</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="all_animals.html">All animals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="submit.html">Submit an animal</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav><div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Put title from HTML here-->
+                        <h1 class="fw-bolder mb-1">Crocodile </h1>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded" src="https://cdn.britannica.com/55/234355-050-6B07C130/Saltwater-crocodile.jpg" alt="..." /></figure>
+                    <!-- Post content-->
+                    <section class="mb-5"><h1 class="fw-bolder mb-4 mt-5" >Crocodiles are powerful</h1><p class="fs-5 mb-4">Crocodiles (family Crocodylidae) or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. The term crocodile is sometimes used even more loosely to include all extant members of the order Crocodilia, which includes the alligators and caimans (family Alligatoridae), the gharial and false gharial (family Gavialidae) among other extinct taxa.</p><p class="fs-5 mb-4">Although they appear similar, crocodiles, alligators and the gharial belong to separate biological families. The gharial, with its narrow snout, is easier to distinguish, while morphological differences are more difficult to spot in crocodiles and alligators. The most obvious external differences are visible in the head, with crocodiles having narrower and longer heads, with a more V-shaped than a U-shaped snout compared to alligators and caimans. Another obvious trait is that the upper and lower jaws of the crocodiles are the same width, and the teeth in the lower jaw fall along the edge or outside the upper jaw when the mouth is closed; therefore, all teeth are visible, unlike an alligator, which possesses in the upper jaw small depressions into which the lower teeth fit. Also, when the crocodile's mouth is closed, the large fourth tooth in the lower jaw fits into a constriction in the upper jaw. For hard-to-distinguish specimens, the protruding tooth is the most reliable feature to define the species' family.[1] Crocodiles have more webbing on the toes of the hind feet and can better tolerate saltwater due to specialized salt glands for filtering out salt, which are present, but non-functioning, in alligators. Another trait that separates crocodiles from other crocodilians is their much higher levels of aggression.[2]</p><p class="fs-5 mb-4">Crocodile size, morphology, behaviour and ecology differ somewhat among species. However, they have many similarities in these areas as well. All crocodiles are semiaquatic and tend to congregate in freshwater habitats such as rivers, lakes, wetlands and sometimes in brackish water and saltwater. They are carnivorous animals, feeding mostly on vertebrates such as fish, reptiles, birds and mammals, and sometimes on invertebrates such as molluscs and crustaceans, depending on species and age. All crocodiles are tropical species that, unlike alligators, are very sensitive to cold. They separated from other crocodilians during the Eocene epoch, about 55 million years ago.[3] Many species are at the risk of extinction, some being classified as critically endangered.</p></section>
+                            </article>
+                        </div>
+                    </div>
+                </div><!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+            </body>
+        <script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background'
+                });
+            };
+        </script>
+        </html>
