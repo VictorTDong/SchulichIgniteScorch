@@ -77,7 +77,7 @@
 
             
             <li class="list-group-item d-flex justify-content-between">
-            <span>Subtotal <strong>no tax</strong>tal (CAD)</span>
+            <span>Subtotal <strong>no tax</strong> (CAD)</span>
             <strong>$20</strong>
             </li>
             
@@ -248,12 +248,69 @@
 
 
 <script>
-    <!--TODO: Add your Level 3 code here-->
-    cart = getCart()
+window.onload = function() {
+    console.log("populateCart");
+    cart = getCart();
 
-    document.getElementById("cart-items-indicator")
-    cart_list = document.getElementById("cart-list")
+    document.getElementById("cart-items-indicator").innerHTML = cart.length;
+    cart_list = document.getElementById("cart-list");
+    cart.forEach((item) => {
+        const listItem = document.createElement("li");
+        const divItem = document.createElement("div");
+        const h6Item = document.createElement("h6");
+        const smallItem = document.createElement("small");
+        const spanItem = document.createElement("span");
+        listItem.setAttribute("class", "list-group-item d-flex justify-content-between lh-sm")
+        h6Item.setAttribute("class", "my-0")
+        smallItem.setAttribute("class", "text-muted")
+        spanItem.setAttribute("class", "text-muted")
 
+        h6Item.innerHTML = item.name;
+        smallItem.innerHTML = item.description;
+        spanItem.innerHTML = "$" + item.price;
+
+        divItem.appendChild(h6Item);
+        divItem.appendChild(smallItem);
+
+        listItem.appendChild(divItem);
+        listItem.appendChild(spanItem)
+
+        cart_list.appendChild(listItem);
+
+        if(item.sale == "True"){
+            const listSaleItem = document.createElement("li");
+            const divSaleItem = document.createElement("div");
+            const h6SaleItem = document.createElement("h6");
+            const smallSaleItem = document.createElement("small");
+            const spanSaleItem = document.createElement("span");
+
+            listSaleItem.setAttribute("class", "list-group-item d-flex justify-content-between bg-light")
+            divSaleItem.setAttribute("class", "text-success")
+            h6SaleItem.setAttribute("class", "my-0")
+            smallSaleItem.setAttribute("class", "")
+            spanSaleItem.setAttribute("class", "text-success")
+
+            h6SaleItem.innerHTML = item.name;
+            smallSaleItem.innerHTML = "10% off";
+            spanSaleItem.innerHTML = "-$" + (item.price * 0.1).toFixed(2);;
+
+            divSaleItem.appendChild(h6SaleItem);
+            divSaleItem.appendChild(smallSaleItem);
+
+            listSaleItem.appendChild(divSaleItem);
+            listSaleItem.appendChild(spanSaleItem)
+
+            cart_list.appendChild(listSaleItem);
+        }
+    });
+};
+        // <li class="list-group-item d-flex justify-content-between bg-light">
+        //     <div class="text-success">
+        //         <h6 class="my-0">Product sale</h6>
+        //         <small>%10 off</small>
+        //     </div>
+        //     <span class="text-success">-$5</span>
+        // </li>
 </script>
 
 

@@ -8,11 +8,11 @@ function addToCart(name, price, sale, description, image){
         inDatabase["quantity"] += 1
         window.localStorage.setItem(name, JSON.stringify(inDatabase))
     }
-    console.log("in");
 }
 
 function getCart(){
     // Searches the localStorage database for items from the cart
+    localStorage.removeItem('debug');
     cart = []
     for (key in localStorage){
         if (!(["length","clear","getItem","key","removeItem","setItem"].includes(key))){
