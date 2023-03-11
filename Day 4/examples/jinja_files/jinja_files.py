@@ -3,7 +3,7 @@
 # You must run this from the /jinja_files folder or else jinja can't find the templates
 
 # 1. Import
-from jinja2 import Environment, select_autoescape, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 # 2. Setup the environment
 env = Environment(autoescape=select_autoescape(), loader=FileSystemLoader("templates"))
@@ -16,4 +16,3 @@ html = example_template.render(name="kieran", age=23)
 
 # Print result
 print(html)
-

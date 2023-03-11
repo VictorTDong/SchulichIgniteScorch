@@ -1,1 +1,22 @@
-<!-- Level 1 code here-->
+<style>
+.act-price{color:red;font-weight: 700}
+.dis-price{text-decoration: line-through}
+</style>
+          <div class="col-lg-4 align-items mx-auto">
+            <div class="card">
+              <img class="card-img-top " src="{{product.image}}" alt="..." />
+              <div class="card-body">
+                <h2 class="card-title h4">{{product.name}}</h2>
+                {% if product.sale == true %}
+                  <div class="price d-flex flex-row align-items-center"> <span class="act-price">{{ "%.2f"|format(product.price * 0.9) }}</span> 
+                    <div class="ml-2"> <small class="dis-price">{{product.price}}</small> <span>10% OFF</span> </div>
+                  </div>
+                {% else %}
+                  <div class="price d-flex flex-row align-items-center"> <span class="act-price">{{product.price}}</span></div>
+                {% endif %}
+                <p class="card-text">{{product.description}}</p>
+                <a class="btn btn-primary" href="{{product.name}}.html">Order Now</a>
+              </div>
+            </div>
+          </div>
+

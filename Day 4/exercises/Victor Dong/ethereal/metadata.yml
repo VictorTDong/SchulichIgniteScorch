@@ -1,0 +1,47 @@
+created: 2022-4-22
+ezcv_version: 0.3.4
+folder: ethereal
+name: ethereal
+required_config:
+  name:
+    type: str
+    default: name
+    description: "Your full name"
+  avatar:
+    type: str
+    default: https://minervastrategies.com/wp-content/uploads/2016/03/default-avatar.jpg
+    description: "A path to an image of yourself (can also be a URL)"
+  biography:
+    type: str
+    default: "A description of yourself"
+    description: "This field is for writing about yourself you can add a > to span multiple lines"
+sections:
+  education:
+    fields:
+      current: bool
+      institution: str
+      title: str
+      year_ended: int
+      year_started: int
+    type: markdown
+  gallery:
+    type: gallery
+  volunteering_experience:
+    fields:
+      company: str
+      current: bool
+      month_started: str
+      role: str
+      year_ended: int
+      year_started: int
+    type: markdown
+  work_experience:
+    fields:
+      company: str
+      current: bool
+      month_started: str
+      role: str
+      year_ended: int
+      year_started: int
+    type: markdown
+updated: 2022-4-22

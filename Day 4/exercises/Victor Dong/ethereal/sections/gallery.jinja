@@ -1,0 +1,43 @@
+<section class="panel">
+    <div class="intro color2">
+        <h2 class="major">Gallery</h2>
+        <p></p>
+    </div>
+    <div class="gallery"><div class="modal" tabindex="-1"><div class="inner"><img src=""></div></div>
+
+{% if gallery|length % 3 == 0 %}
+    {% for sublist in gallery|split_to_sublists(3) %}
+        <div class="group span-3">
+            <a href="{{ sublist.0[0]['file_path'] }}" class="image filtered span-3" data-position="bottom"><img src="{{ sublist.0[0]['file_path'] }}" alt="{{ sublist.0[0]['file_path'].split()[-1] }}"></a>
+            <a href="{{ sublist.1[0]['file_path'] }}" class="image filtered span-1-5" data-position="center"><img src="{{ sublist.1[0]['file_path'] }}" alt="{{ sublist.1[0]['file_path'].split()[-1]}}"></a>
+            <a href="{{ sublist.2[0]['file_path'] }}" class="image filtered span-1-5" data-position="bottom"><img src="{{ sublist.2[0]['file_path'] }}" alt="{{ sublist.2[0]['file_path'].split()[-1] }}"></a>
+        </div>
+    {% endfor %}
+
+{% elif gallery|length % 4 == 0 %}
+    {% for sublist in gallery|split_to_sublists(4) %}
+        <div class="group span-4-5">
+            <a href="{{ sublist.0[0]['file_path'] }}" class="image filtered span-3" data-position="top"><img src="{{ sublist.0[0]['file_path'] }}" alt="{{ sublist.0[0]['file_path'].split()[-1] }}"></a>
+            <a href="{{ sublist.1[0]['file_path'] }}" class="image filtered span-1-5" data-position="center"><img src="{{ sublist.1[0]['file_path'] }}" alt="{{ sublist.1[0]['file_path'].split()[-1]}}"></a>
+            <a href="{{ sublist.2[0]['file_path'] }}" class="image filtered span-1-5" data-position="bottom"><img src="{{ sublist.2[0]['file_path'] }}" alt="{{ sublist.2[0]['file_path'].split()[-1] }}"></a>
+            <a href="{{ sublist.3[0]['file_path'] }}" class="image filtered span-3" data-position="top"><img src="{{ sublist.3[0]['file_path'] }}" alt="{{ sublist.3[0]['file_path'].split()[-1] }}"></a>
+        </div>
+    {% endfor %}
+
+{% elif gallery|length % 2 == 0 %}
+    {% for sublist in gallery|split_to_sublists(2) %}
+        <div class="group span-5">
+            <a href="{{ sublist.0[0]['file_path'] }}" class="image filtered span-5" data-position="top"><img src="{{ sublist.0[0]['file_path'] }}" alt="{{ sublist.0[0]['file_path'].split()[-1] }}"></a>
+            <a href="{{ sublist.1[0]['file_path'] }}" class="image filtered span-5" data-position="bottom"><img src="{{ sublist.1[0]['file_path'] }}" alt="{{ sublist.1[0]['file_path'].split()[-1]}}"></a>
+        </div>
+    {% endfor %}
+
+{% else %}
+    {% for image in gallery %}
+    <a href="{{ image[0]['file_path'] }}" class="image filtered span-3-5" data-position="top"><img src="{{ image[0]['file_path'] }}" alt="{{ image[0]['file_path'].split()[-1] }}"></a>
+    {% endfor %}
+
+
+{% endif %}
+
+</section>
