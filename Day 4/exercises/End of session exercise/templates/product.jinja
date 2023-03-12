@@ -37,7 +37,7 @@ label.radio input:checked+span{border-color: #ff0000;color: #fff}.btn-danger{bac
                                 <h5 class="text-uppercase">{{product.name}}</h5>
                                 {% if product.sale == true %}
                                     <div class="price d-flex flex-row align-items-center"> <span class="act-price">{{ "%.2f"|format(product.price * 0.9) }}</span> 
-                                        <div class="ml-2"> <small class="dis-price">{{product.price}}</small> <span>10% OFF</span> </div>
+                                        <div class="ml-2"> <small class="dis-price ms-1">{{product.price}}</small> <span>10% OFF</span> </div>
                                     </div>
                                 {% else %}
                                     <div class="price d-flex flex-row align-items-center"> <span class="act-price">{{product.price}}</span></div>
