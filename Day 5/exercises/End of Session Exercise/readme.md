@@ -44,3 +44,4 @@ Implement 2 actions from the workplace, some good options are:
 
 - [Code minifying](https://en.wikipedia.org/wiki/Minification_(programming))
 - [Image minifying](https://www.net7.be/blog/article/image_minification.html)
+T
